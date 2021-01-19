@@ -43,30 +43,17 @@ public class MovieRentalTest {
     /**
      * Test of getDaysRented method, of class MovieRental.
      */
-    @Test
-    public void testGetDaysRented() {
-//        System.out.println("getDaysRented");
-//        MovieRental instance = null;
-//        int expResult = 0;
-//        int result = instance.getDaysRented();
-//        assertEquals(expResult, result);
-//        // TODO review the generated test code and remove the default call to fail.
-//        fail("The test case is a prototype.");
-           assertEquals(2, new MovieRental(theManWhoKnewTooMuch, 2).getDaysRented());
-    }
+//    @Test
+//    public void testGetDaysRented() {
+//           assertEquals(2, new MovieRental(theManWhoKnewTooMuch, 2).getDaysRented());
+//    }
 
     /**
      * Test of getMovie method, of class MovieRental.
      */
     @Test
     public void testGetMovie() {
-//        System.out.println("getMovie");
-//        MovieRental instance = null;
-//        Movie expResult = null;
-//        Movie result = instance.getMovie();
-//        assertEquals(expResult, result);
-//        // TODO review the generated test code and remove the default call to fail.
-//        fail("The test case is a prototype.");
+
           assertEquals(theManWhoKnewTooMuch, new MovieRental(theManWhoKnewTooMuch, 2).getMovie());
     }
     
