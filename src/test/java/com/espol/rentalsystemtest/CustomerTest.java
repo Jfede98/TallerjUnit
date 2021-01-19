@@ -37,6 +37,7 @@ public class CustomerTest {
     public void tearDown() {
     }
 
+    
         @Test
     public void testStatementRegularMovieOnly() {
         // regular movies cost $2.00 for the first 2 days, and $1.50/day thereafter
