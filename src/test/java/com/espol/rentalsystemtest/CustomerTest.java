@@ -65,17 +65,22 @@ public class CustomerTest {
 //                "You earned 1 frequent renter points",johnDoeJr.statement());
 //    }
 //    
+//    @Test
+//    public void testStatementNewReleaseOnly() {
+//        // new releases cost $3.00/day
+//        // a rental earns 1 frequent-renter point 1 day; 2 points for 2 or more days
+//        Customer janeDoe = new Customer("Jane Doe");
+//        MovieRental instance = new MovieRental(new Movie("Over the moon", Movie.NEW_RELEASE),4);
+//        janeDoe.addMovieRental(instance);
+//        assertEquals("Rental Record for Jane Doe\n" +
+//                "\tOver the moon\t12.0\n" +
+//                "Amount owed is 12.0\n" +
+//                "You earned 2 frequent renter points",janeDoe.statement());
+//    }
     @Test
-    public void testStatementNewReleaseOnly() {
-        // new releases cost $3.00/day
-        // a rental earns 1 frequent-renter point 1 day; 2 points for 2 or more days
-        Customer janeDoe = new Customer("Jane Doe");
-        MovieRental instance = new MovieRental(new Movie("Over the moon", Movie.NEW_RELEASE),4);
-        janeDoe.addMovieRental(instance);
-        assertEquals("Rental Record for Jane Doe\n" +
-                "\tOver the moon\t12.0\n" +
-                "Amount owed is 12.0\n" +
-                "You earned 2 frequent renter points",janeDoe.statement());
+    public void testGetName() {
+        String name = "John Doe"; 
+        assertEquals(name, new Customer(name)._name);
     }
 
 }
